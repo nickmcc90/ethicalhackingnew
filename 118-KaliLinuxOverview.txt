@@ -110,3 +110,13 @@ netstat -ano          This opens all things that an ip address is currently doin
 route                 This shows all the available ip addresses of the thing you are attacking.
 
 <!-- Timestamp 2:29:44 -->
+
+-------------NETWORK COMMANDS UPDATE-------------
+
+There is a new and improved version of ifconfig. It'script
+
+  ip a      ip address (just like ifconfig but ifconfig is older)
+
+  ip n      (just like arp -a, more colorful)
+
+  ip r      routing stuff (just like typing route)

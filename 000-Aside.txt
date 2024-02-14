@@ -1,0 +1,6 @@
+For the Practical Network Penetration Tester (PNPT) exam,
+which courses are considered mandatory within the Academy TCM?
+
+1. Open source threat inelligence (OSINT) fundamentals
+2. External pentest playbook
+3. Practical ethical hacking.
