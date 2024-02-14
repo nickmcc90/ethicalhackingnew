@@ -1,0 +1,16 @@
+TCP vs UDP
+TCP is Transmission Control Protocol. (connection oriented)
+UDP is User Datagram Protocol. (connection-less protocol)
+
+TCP is used for high-reliability tasks like websites.
+
+UDP is used for streaming for example.
+
+The most common protocol to be scanned is TCP.
+
+
+*three way handshake*
+
+SYN > SYN ACK > ACK         Let's say we want to connect to a port. First, we send
+                            a SYN, then the port sends back a SYN ACK, letting us know
+                            that we can connect, then we send an ACK package to connect.

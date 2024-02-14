@@ -1,0 +1,11 @@
+port 21 - we can put a file, or get a file off of the server.
+port 23 - logging in remotely to something
+port 22 - the encrypted version of logging into something.
+ports 25, 110, and 143 - these relate to mail *not getting TOO into this*
+port 53 - a way to result ip addresses to names. Google.com is a domain name that relates to humans, but on the backend, its an ip address.
+port 139 (earlier) or 445 (latest version) - most common, file sharing.
+port 67,68 - dynamic or static ip addresses.
+port 69 - trivial form of port 21 under UDP
+port 161 - simple network management protocol
+
+<!--Timestamp 1:00:08 -->

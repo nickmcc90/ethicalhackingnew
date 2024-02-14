@@ -1,0 +1,43 @@
+root@kali: # ifconfig
+inet 192.168.57.139 netmask 255.255.255.0 broadcast 192.168.57.255
+
+
+A subnet is the netmask 255.255.255.0 shown above.
+
+<!-- timestamp: 1:14:22 -->
+
+Let's start with the 255.255.255.0, also known as the /24
+Hosts: 256.
+
+It is called the /24 because there are 24 bits turned on within 255.255.255.0.
+Remember how each section of 255.255.255.0 was called an octet? And within each
+octet there is a...
+
+128 64 32 16 8 4 2 1                   ....thing like this? There are 8 bits here. So 
+1   1   1  1 1 1 1 1    = 255             with since there are three 255 sections in
+                                          255.255.255.0, that means its /24. Now if this
+                                          was 255.255.254.0, one of the bits was turned off
+                                          in the third section so now its a /23. As we turn down
+                                          the bits, the amount of hosts get larger and larger.
+
+
+The subnet is equal to the numerical conversion of the amount of bits that are turned on.
+So for a /20, that would have two full octets and four left over in the third octet. So 
+for the third octet, it would be 128+64+32+16 = 240. So the network would be 
+255.255.240.0
+
+To calculate hosts, you see how many bits are turned off. 12 bits turned off? 2^12 hosts.
+
+Notes: 
+Always subtract 2 from host total.
+Network ID - First Address
+Broadcast - Last Address
+
+So.... for 192.168.1.0/24     
+Subnet: 255.255.255.0
+Hosts: 254
+Network: 192.168.1.0
+Broadcast: 192.168.1.255    It's 255 at the end because 0-254 is 255 addresses.
+
+You could also have multiple networks one one 1.0 network
+*shown on 116-picture.

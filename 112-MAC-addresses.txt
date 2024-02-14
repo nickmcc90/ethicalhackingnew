@@ -1,0 +1,11 @@
+Layer 2. Related to switching.
+
+Media access control. This is a physical address. A way we communicate when using switches.
+This is the 'ether' text in the "ifconfig" command.
+
+ether 00:0c: 29:0a:42:05 txqueuelen 1000 ' (Ethernet)
+                                                                  As you can see, this ether has six pairs of two.
+                                                                  The first three pairs are identifiers. They can 
+                                                                  be typed into the internet to find the originator.
+
+So basically, MAC addresses are something that each physical device has. (phone, computer, etc.)

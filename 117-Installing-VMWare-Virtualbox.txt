@@ -1,0 +1,9 @@
+A virtual machine is a machine inside of a machine.
+
+<!--Timestamp 1:48:04-->
+
+We did it!!!
+
+!!*** Make sure that for any VM that you use, go into the settings and 
+make sure that there is a NAT network that it is attributed to. This saves
+you many troubles.

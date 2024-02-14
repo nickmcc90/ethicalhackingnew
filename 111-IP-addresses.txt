@@ -1,0 +1,34 @@
+root@kali: # ifconfig
+inet 192.168.57.139 netmask 255.255.255.0 broadcast 192.168.57.255
+inet6 fe80::20c:29ff: fe0a:4205 prefixlen 64 scopeid 0x20<link>
+ether 00:0c: 29:0a:42:05 txqueuelen 1000 ' (Ethernet)
+-----
+"ifconfig" is a command that allows you to see your ip address.
+inet (ipv4) and inet6 (ipv6) are two common ways to display the ip.
+
+inet is comprised of four octets. An octet has 8 bits, so an inet ip address has 32 bits. This equals 4 bytes.
+
+The way that octets work are as follows:
+
+128 64 32 16 8 4 2 1
+1    1  1  0 0 0 1 1        The ones and zeros indicate on and off values. The highest number we can make is 255.
+                            With the example shown, our number totals to 128+64+32+2+1 to be 216. An ip address is
+                            made up of four of these number combos.
+
+
+2^32 (since we have 32 bytes) is the amount of possible ip address we can make, supposedly. 4,294,967,296. But there are
+seven billion people on this planet, so how can we all have one? This is true, that we need more. ipv4 was made in 1981
+and it was never imagined that we would need all this space. So ipv6 comes to the rescue.
+
+ipv6 is 2^128 bits, which is a reeaaaaally long number. You would think that people are using this alternative, but we
+aren't! WE STILL USE ipv4!! Why though?
+
+Well, there are things called private IPs. 
+
+*See private-ip-addresses.png*
+Class C: Households and small business are suitable to have only 254 hosts.
+Class A: Massive businesses use these. Many hosts.
+
+Any IP that isn't private in this category is free game for the public. People usually rent out these numbers.
+
+ipv4, ipv6, and routing are all Layer 3.

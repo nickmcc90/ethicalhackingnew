@@ -1,0 +1,20 @@
+115-OSI-Model
+
+This is referring to the layers that we were talking about.
+
+Here is a pnumonic to remember it all:
+
+*please do not throw sausage pizza away* lol
+
+1 Physical - data cables, cat6
+2 Data - switches, MAC addresses
+3 Network - IP addresses, routing
+4 Transport - TCP and UDP
+5 Session - session management
+6 Presentation - WMV, JPEG, MOV (media)
+7 Application - HTTP, SMTP
+
+When we receive data, we receive it through the physical, down the list, then through application.
+When we transmit data, it is the opposite.
+When troubleshooting, it's good to start at the physical level.
+

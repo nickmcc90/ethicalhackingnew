@@ -1,0 +1,112 @@
+<!--Timestamp: 1:53:36-->
+
+-----------------SUDO-----------------
+
+Sudo stands for super user do. We can run commands with this line as an elevated user.
+The elevated user is a root user.
+
+
+cat /etc/shadow       This command doesn't get run unless you put 'sudo' in front of it because it is a sensitive file.
+
+
+In order to switch to the root user we can type:
+sudo su -
+Which switches us to the root user for just the tab you are in.
+
+
+-----------NAVIGATING THE FILE SYSTEM-----------------
+
+To see where we are, we can type 'pwd' to see the folder we're in.
+To change to a different folder, that's cd.
+To change a folder backwards, that's 'cd ..'. Two dots after cd.
+To see what's in our current folder, press ls.
+We can go right to a directory put typing cd /etc/ from any folder. (Whatever the place is called, doesn't have to be etc.)
+We can make a folder by typing mkdir  'filename'.
+To remove a folder, rmdir 'filename'.
+To see hidden files, type ls -la.
+We can move text into a place with: 
+
+echo "hello!" > test.txt
+ls
+cp test.txt Location/
+
+To remove it:
+
+rm Location/test.txt
+
+To move it (not copy it):
+
+mv test.txt Location/
+
+To find a file:
+
+updatedb
+locate 'file'
+
+To change your password: 
+
+passwd        (Then type in a new password)
+
+
+If you need to refresh your memory on commands:
+
+man 'command name'
+
+To read a file, it's:
+cat 'filename'
+
+
+--------------USERS & PERMISSIONS---------------------
+
+When we press ls -la (this command also shows you permissions), we can see a bunch of files and directories.
+The directories start with d, and files start with -.
+
+drwx r-x r-x
+The first section is the person who made it's permissions, which is read, write, and execute.
+The second section is the people who have access to it in the group's permissions which is read and execute.
+The third section is any common user that can read and execute.
+
+As penetration testers, we look for files that have full read write executes to see if we can upload something that
+can mess up the function. For example, the /temp/ folder.
+
+
+If we create a script, a script can't fully run unless we have full access in a place.
+
+We can change permissions on a script by typing chmod 777 'filename'.
+
+
+
+We can add users:
+adduser
+Then, 
+adduser 'name'
+Then it asks for password,
+'type password'.
+
+We can type
+cat /etc/passwd     To see all the users.
+
+We can type
+cat /etc/shadow     To get the passwords for everyone, then it needs to be run through a password breaker.
+
+We can type
+su 'user'         To switch to a user.
+
+If a lower user tries to change the password of the root channel with:
+sudo passwd root            They won't be able to.
+
+
+
+
+---------------COMMON NETWORK COMMANDS-------------------
+
+ping 'ip address'       We press Ctrl+C to end this, because this commnad runs forever. Just has a constant stream of communication with ip.
+
+arp -a                This associates ip address with their respective MAC address.
+
+netstat -ano          This opens all things that an ip address is currently doing, so you can see who they're talking to, all that.
+
+
+route                 This shows all the available ip addresses of the thing you are attacking.
+
+<!-- Timestamp 2:29:44 -->
